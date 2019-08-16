@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="stylesheet1.css">
+    <link rel="stylesheet" href="stylesheet_ja.css">
     <meta charset="utf-8">
-    <title>Shunsei Tananak</title>
+    <title>Shunsei Tananaka</title>
+    <!--スムーズスクロール-->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script>
+      $(function(){
+      // #で始まるアンカーをクリックした場合に処理
+      $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+      });
+      });
+      </script>
+    <!--スムーズスクロール-->
+
   </head>
   <body>
     <!--header5等分して相対位置で左から業績、受賞、助成、連絡先、空白、言語　となるようにする-->
     <div class="header">
       <div class="language">Japanese</div>
       <div class="header-list">
-        <a href="#profile" class="btn plofile">プロフ</a>
+        <a href="#profile" class="btn plofile">プロフィール</a>
         <a href="#publishment" class="btn publishment">業績</a>
         <a href="#award" class="btn award">受賞</a>
         <a href="#grant" class="btn grant">研究助成</a>
@@ -184,6 +206,10 @@
     <div class="blank2">
     </div>
 
+  </div>
+
+  <div class="footer">
+    &copy;&nbsp;2019&nbsp;&nbsp;<a href="#profile">Shunsei&nbsp;TANAKA</a>&nbsp;&nbsp;All Rights Reserved.
   </div>
   </body>
 </html>
