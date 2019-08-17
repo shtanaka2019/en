@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="stylesheet_ja.css">
+    <link rel="stylesheet" href="stylesheet_en.css">
     <meta charset="utf-8">
     <title>Shunsei Tananaka</title>
-    <!--スムーズスクロール-->
+
+
+
+
+
+
+    <!--スムーズスクロール
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script>
       $(function(){
@@ -24,18 +30,47 @@
       });
       });
       </script>
-    <!--スムーズスクロール-->
+    スムーズスクロール-->
+
+    <!--写真スライド-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+        </script>
+    <!--写真スライド-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+
+
 
   </head>
   <body>
     <!--header5等分して相対位置で左から業績、受賞、助成、連絡先、空白、言語　となるようにする-->
     <div class="header">
-      <div class="language">Japanese</div>
+
+    <div class ="language">
+       <i class="fas fa-globe-asia">&nbsp;Language</i>
+        <ul class="language__second-level">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Japanese</a></li>
+        </ul>
+    </div>
+
+</ul>
       <div class="header-list">
-        <a href="#profile" class="btn plofile">プロフィール</a>
-        <a href="#publishment" class="btn publishment">業績</a>
-        <a href="#award" class="btn award">受賞</a>
-        <a href="#grant" class="btn grant">研究助成</a>
+        <a href="#profile" class="btn plofile"><span>P</span>rofile</a>
+        <a href="#publishment" class="btn publishment"><span>P</span>ublications</a>
+        <a href="#award" class="btn award"><Span>A</Span>wards</a>
+        <a href="#grant" class="btn grant"><Span>G</Span>rants</a>
+        <a href="#gallery" class="btn gallery"><Span>G</Span>allery</a>
       </div>
     </div>
 
@@ -43,52 +78,70 @@
     </div>
 
     <div class="contents profile">
-    <h1 class ="caption"> プロフィール
-      <div class="profileAll clearfix">
-        <div class="profcontent profphoto">
-          <p>
-            <IMG SRC="Profile_pic.jpg" class="photo">
-          </p>
-        </div>
+    <h1 class ="caption"> Profile
+      <div class="profileAll">
+
         <div class="profcontent profletter">
           <ul>
             <li class="profindex">
-              田中&nbsp;俊成（たなか&nbsp;しゅんせい）
+              Shunsei&nbsp;TANAKA
             </li>
             <li class="profdetail">
-              <a href="http://www.civil.t.u-tokyo.ac.jp/" target="_blank" class="link">東京大学大学院&nbsp;工学系研究科&nbsp;社会基盤学専攻</a>&nbsp;博士課程&nbsp;2年
+              &#9679;Ph.D&nbsp;2nd,&nbsp;<a href="http://www.civil.t.u-tokyo.ac.jp/" target="_blank" class="link">Civil Engineering Department, The University of Tokyo</a>
             </li>
             <li class="profdetail">
-              <a href="https://r.goope.jp/ysakai" target="_blank" class="link">生産技術研究所&nbsp;酒井雄也研究室 </a>
+              &#9679;<a href="https://r.goope.jp/ysakai" target="_blank" class="link">Yuya SAKAI Lab.,</a>&nbsp;Insitute of Industrial Scinece
             </li>
             <li class="profdetail">
-              shtanaka[at]iis.u-tokyo.ac.jp
+              &#9679;Contact:shtanaka[at]iis.u-tokyo.ac.jp
             </li>
 
             <li class="profindex">
-                現在の研究テーマ
+                Research Topic
               </li>
-              <li class="profdetail">
-              コンクリート構造物の超微破壊検査手法の確立
+              <li class="profdetail topic">
+              Development of extremely-tinily-destructive inspection of concrete structure
+
               </li>
 
               <li class="profindex">
-                経歴
+                Educations
               </li>
               <li class="profdetail">
-                2012年3月&nbsp;&nbsp;&nbsp;秋田県立秋田高等学校&nbsp;卒業
+                &#9679;April 2009 - March 2012<br>
+                Akita High School, Akita Prefecture, Japan
               </li>
               <li class="profdetail">
-                2016年3月&nbsp;&nbsp;&nbsp;東京大学工学部社会基盤学科&nbsp;卒業　（<a href="http://concrete.t.u-tokyo.ac.jp/ja_2017/" target="_blank" class="link">コンクリート研究室</a>）　
+                &#9679;April 2012 - March 2016<br>
+                Bachelor student at Department of Civil Engineering, Faculty of Engineering, The University of Tokyo<br>
+                Supervisor:<a href="http://concrete.t.u-tokyo.ac.jp/ja_2017/" target="_blank" class="link">Tetuya ISHIDA</a>
               </li>
               <li class="profdetail">
-                2018年3月&nbsp;&nbsp;&nbsp;東京大学工学系研究科社会基盤学専攻修士課程&nbsp;修了　（<a href="http://wdnsword.iis.u-tokyo.ac.jp/" target="_blank" class="link">岸研究室</a>）
+                &#9679;April 2016 - March 2018<br>
+                Master-course student at Department of Civil Engineering, Graduate school of Engineering, The University of Tokyo<br>
+                Supervisor:<a href="http://wdnsword.iis.u-tokyo.ac.jp" target="_blank" class="link">Kishi TOSHIHARU</a>
               </li>
               <li class="profdetail">
-                2018年4月&ndash;&nbsp;東京大学工学系研究科社会基盤学専攻博士課程　（<a href="https://r.goope.jp/ysakai" target="_blank" class="link">酒井雄也研究室</a>）
+                &#9679;April 2018 -<br>
+                Doctor-course student at Department of Civil Engineering, Graduate school of Engineering, The University of Tokyo<br>
+                Supervisor:<a href="https://r.goope.jp/ysakai" target="_blank" class="link">Yuya SAKAI</a>
               </li>
             </ul>
           </div>
+
+          <div class="profcontent profphoto">
+            <p>
+              <IMG SRC="Profile_pic.jpg" class="photo">
+            </p>
+
+            <p>
+              <br>
+              <br>
+              <IMG SRC="Profile_pic2.jpg" class="photo">
+            </p>
+
+          </div>
+
       </div>
       </h1>
     </div>
@@ -97,14 +150,14 @@
     <div class="blank" id="publishment">
     </div>
     <div class="contents publishment" >
-    <h1 class ="caption"> 業績<span> (&#9679;:査読有)</span>
+    <h1 class ="caption"> Publications<span> (&#9679;:Peer-riewved)</span>
 
-      <h2 class="paper InternationalJournal"> 国際ジャーナル
+      <h2 class="paper InternationalJournal"> International Journal
         <ol>
         </ol>
       </h2>
 
-      <h2 class="paper InternationalConferenceEtc"> 国際学会等
+      <h2 class="paper InternationalConferenceEtc"> International Conference, etc
         <ol>
           <li>&#9679;Shunsei Tanaka, Yuya Sakai: Development and verification of neutralization depth and chloride ion penetration depth measurement method using fibrescope, The 5th International Conference in Sustainable Construction Materials and Technologies (SCMT5), London, UK, July. 14-17, 2019 (CD-ROM)
           </li>
@@ -115,32 +168,38 @@
         </ol>
       </h2>
 
-      <h2 class="paper DomesticJournal"> 国内ジャーナル
+      <h2 class="paper DomesticJournal"> Domestic Journal
         <ol>
-          <li>&#9679;田中俊成，酒井雄也：「セメントペーストの強度とドリル掘削粉の諸性状との相関に関する研究」，コンクリート工学年次論文集，Vol. 41，pp. 1853-1858，2019.7
+          <li>&#9679;Shunsei TANAKA，Yuya SAKAI："Study on the correlation between compressive strength of hardened cement paste and physical properties of drilling powder"，Proceedings of the Japan Concrete Institute，Vol. 41，pp. 1853-1858，July 2019. (in Japanese)
           </li>
-          <li>&#9679;田中俊成，酒井雄也：「直径1 mmのドリル孔による中性化深さの測定手法の開発」，高速道路と自動車，Vol. 62，No. 3，pp. 21-27，2019.3
+          <li>&#9679;Shunsei TANAKA，Yuya SAKAI："Development of a method of carbonation depth measurement by 1 mm diameter drill hole"，Expressways and automobiles，Vol. 62，No. 3，pp. 21-27，March 2019. (in Japanese)
           </li>
-          <li>&nbsp;&nbsp;&nbsp;田中俊成，酒井雄也：「セメントペーストから採取したドリル掘削粉の空隙構造と供試体強度の関係」，生産研究，Vol. 71，No. 2，pp. 301-304，2019.3
+          <li>&nbsp;&nbsp;&nbsp;<a href="https://www.jstage.jst.go.jp/article/seisankenkyu/71/2/71_173/_article/-char/ja/" class="paperlink">Shunsei TANAKA, Yuya SAKAI："Correlation between strength of hardened cement paste and pore structure of drilling powder"，Monthly journal of the Institute of Industrial Science, The University of Tokyo，Vol. 71，No. 2，pp. 301-304，March 2019.</a> (in Japanese)
           </li>
-          <li>&nbsp;&nbsp;&nbsp;田中俊成，酒井雄也：「極細ファイバースコープによる中性化深さ測定に関する検討」，生産研究，Vol. 71，No. 1，pp. 111-114，2019.1
+          <li>&nbsp;&nbsp;&nbsp;<a href="https://www.jstage.jst.go.jp/article/seisankenkyu/71/1/71_47/_article/-char/ja" class="paperlink">Shunsei TANAKA，Yuya SAKAI："Carbonation depth measurement with extra-fine fiber scope"，Monthly journal of the Institute of Industrial Science, The University of Tokyo，Vol. 71，No. 1，pp. 111-114，January 2019.</a> (in Japanese)
           </li>
-          <li>&#9679;田中俊成，岸利治：「サスペンジョンの流動曲線群が結ぶ焦点位置の時間変化挙動についての粘度特性に基づいた考察」，コンクリート工学年次論文集，Vol. 40，No. 1，pp. 1101-1106，2018.7
+          <li>&#9679;Shunsei TANAKA，Kishi TOSHIHARU："Study on shift of focal point of flow curves of suspension based on viscosity characteristics"，Proceedings of the Japan Concrete Institute，Vol. 40，No. 1，pp. 1101-1106，July 2018. (in Japanese)
+          <!--サスペンジョンの流動曲線群が結ぶ焦点位置の時間変化挙動についての粘度特性に基づいた考察-->
           </li>
         </ol>
       </h2>
 
-      <h2 class="paper DomesticConferenceEtc"> 国内学会等
+      <h2 class="paper DomesticConferenceEtc"> Domestic conference
         <ol>
-          <li>&nbsp;&nbsp;&nbsp;田中俊成，酒井雄也：「結合水量と真密度の関係の定式化とその検証」，第73回セメント技術大会講演要旨　2019（CD-ROM)，東京，2019年5月
+          <li>&nbsp;&nbsp;&nbsp;Shunsei TANAKA，Yuya SAKAI："Formulation and verification of the relationship between chemically bound water content and Herium true density"，Proceedings of the 73rd Annual Convention，Japan Cement Association, 2019（CD-ROM)，Tokyo，Japan, May 2019. (in Japanese)
+          <!--結合水量と真密度の関係の定式化とその検証-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;田中俊成，岸利治：「画像処理によるスラリーの流動範囲自動測定手法の開発と検証」，土木学会第73回年次学術講演会講演概要集(DVD)，V-018，pp. 35-36, 北海道，2018年8月
+          <li>&nbsp;&nbsp;&nbsp;Shunsei TANAKA，Toshiharu KISHI："Development and verification of automatic measurement method of flowing area of slurry by image processing"，Proceedings of the 73rd Annual Convention of Japan Society of Civil Engineers(DVD)，V-018，pp. 35-36, Hokkaido, Japan, Augusut 2018. (in Japanese)
+          <!--画像処理によるスラリーの流動範囲自動測定手法の開発と検証-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;酒井雄也，田中俊成：「吸引カップによるコンクリートのごく表層の透気性評価」，土木学会第73回年次学術講演会講演概要集(DVD)，V-182，pp.363-364, 北海道，2018年8月
+          <li>&nbsp;&nbsp;&nbsp;Yuya SAKAI，Shunsei TANAKA："Evaluation of air permeability of very shallow surface of concrete with suction cup"，Proceedings of the 73rd Annual Convention of Japan Society of Civil Engineers(DVD)，V-182，pp.363-364,  Hokkaido, Japan, Augusut 2018. (in Japanese)
+          <!--吸引カップによるコンクリートのごく表層の透気性評価-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;田中俊成，岸利治：「サスペンジョンせん断開始直後の弾性的ひずみ挙動の観察」，第72回セメント技術大会講演要旨　2018（CD-ROM), 1315，pp.110-111，東京，2018年5月
+          <li>&nbsp;&nbsp;&nbsp;Shunsei TANAKA，Toshiharu KISHI："Direct Observation of elastic behavior of suspension immediately after the start of shear"，Proceedings of the 72nd Annual Convention，Japan Cement Association　2018（CD-ROM), 1315，pp.110-111，Tokyo, Japan，May 2018. (in Japanese)
+          <!--サスペンジョンせん断開始直後の弾性的ひずみ挙動の観察-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;田中俊成，岸利治：「回転粘度計内部の流動速度分布とせん断応力の同時測定およびその考察」，第45回土木学会関東支部技術発表会講演概要集（CD-ROM)，05-034，山梨，2018年3月
+          <li>&nbsp;&nbsp;&nbsp;Shunsei TANAKA，Toshiharu KISHI："Simultaneous measurement and consideration of flow velocity distribution and shear stress in a coaxial rotational viscometer"，Proceedings of the 45th Annual Convention of Kanto Branch of Japan Society of Civil Engineers（CD-ROM)，05-034, Yamanashi, Japan，March 2018. (in Japanese)
+          <!--回転粘度計内部の流動速度分布とせん断応力の同時測定およびその考察-->
           </li>
         </ol>
       </h2>
@@ -151,23 +210,23 @@
     </div>
 
     <div class="contents award">
-    <h1 class ="caption" id="award"> 受賞
+    <h1 class ="caption" id="award"> Awards
       <h2 class="paper InternationalConferenceEtc">
         <ol>
           <li>&nbsp;&nbsp;&nbsp;Outstanding Paper Award, Fifth International Conference on Sustainable Construction Materials and Technologies (SCMT5),<br>
-            ”Development and verification of neutralization depth and chloride ion penetration depth measurement method using fibrescope”，受賞日2019年7月16日
+            ”Development and verification of neutralization depth and chloride ion penetration depth measurement method using fibrescope”，(Awarded on July 16th, 2019).
           </li>
-          <li>&nbsp;&nbsp;&nbsp;第41回コンクリート工学講演会 年次論文奨励賞，公益社団法人日本コンクリート工学会コンクリート工学年次大会2019，<br>
-            「セメントペーストの圧縮強度とドリル掘削粉の物性との相関に関する研究」，受賞日2019年7月12日
+          <li>&nbsp;&nbsp;&nbsp;Paper Encouragement Award, 41st Annual Convention, Japan Concrete Institute, 2019<br>
+            "Study on the correlation between compressive strength of hardened cement paste and physical properties of drilling powder"(in Japanese)，(Awarded on July 12nd, 2019).
           </li>
-          <li>&nbsp;&nbsp;&nbsp;平成30年度道路と交通論文賞（技術部門，公益財団法人 高速道路調査会，<br>
-            「直径1 mmのドリル孔による中性化深さの測定手法の開発」，受賞日2019年6月5日
+          <li>&nbsp;&nbsp;&nbsp;Technical Paper Award, Express Highway Research Foundation of Japan,<br>
+            "Development of a method of carbonation depth measurement by 1 mm diameter drill hole"，(Awarded on June 5th, 2019).
           </li>
           <li>&nbsp;&nbsp;&nbsp;Best Poster Award，International Conference On Civil, Architecture And Marine Engineering，<br>
-            "Study on correlation of compressive strength of cementitious material based on the hydration degree measured by drilling powder",受賞日2019年4月23日
+            "Study on correlation of compressive strength of cementitious material based on the hydration degree measured by drilling powder", (Awarded on April 23rd, 2019)
           </li>
-          <li>&nbsp;&nbsp;&nbsp;第72回セメント技術大会優秀講演者賞，一般社団法人セメント協会，<br>
-            「サスペンジョンせん断開始直後の弾性的ひずみ挙動の観察」，受賞日2018年8月1日
+          <li>&nbsp;&nbsp;&nbsp;Best Presentation Award，72th Annual Convention，Japan Cement Association,<br>
+            "Direct Observation of elastic behavior of suspension immediately after the start of shear"(in Japanese)，(Awarded on August 1st, 2018).
           </li>
           <!--テンプレート
           <li>&nbsp;&nbsp;&nbsp;賞状名，受賞団体，<br>
@@ -182,20 +241,26 @@
     </div>
 
     <div class="contents grant">
-    <h1 class ="caption"> 研究助成
+    <h1 class ="caption">Grants
       <h2 class="paper InternationalConferenceEtc">
         <ol>
-          <li>&nbsp;&nbsp;&nbsp;2019年度若手研究者研究助成金，一般財団法人防災研究協会
+          <li>&nbsp;&nbsp;&nbsp;Research Grant for Young Researcher，Association For Disaster Prevention Research, 2019.
+          <!--2019年度若手研究者研究助成金，一般財団法人防災研究協会-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;2019年度第1回国際研究集会派遣助成,一般財団法人生産技術研究奨励会
+          <li>&nbsp;&nbsp;&nbsp;FY2019 the 1st Grant for Young Researchers to Attend International Conferences ,The Foundation for the Promotion of Industrial Science, 2019.
+          <!--2019年度第1回国際研究集会派遣助成,一般財団法人生産技術研究奨励会-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;東京大学大学院工学系研究科国際卓越大学院プログラム，2019年4月
+          <li>&nbsp;&nbsp;&nbsp;Research Grant for Graduate Student, World-leading INnovative Graduate Study Program，The University of Tokyo, April 2019.
+          <!--東京大学大学院工学系研究科国際卓越大学院プログラム-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;東京大学大学院工学系研究科国際卓越大学院プログラム，2018年10月
+          <li>&nbsp;&nbsp;&nbsp;Research Grant for Graduate Student, World-leading INnovative Graduate Study Program，The University of Tokyo，October, 2018.
+          <!--東京大学大学院工学系研究科国際卓越大学院プログラム-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;東京大学大学院工学系研究科修士‐博士一貫卓越大学院プログラム，2018年4月
+          <li>&nbsp;&nbsp;&nbsp;Research Grant for Graduate Student, World-leading INnovative Graduate Study Program，The University of Tokyo，April, 2018.
+          <!--東京大学大学院工学系研究科修士‐博士一貫卓越大学院プログラム-->
           </li>
-          <li>&nbsp;&nbsp;&nbsp;東京大学大学院工学系研究科プレSEUT-RA制度，2017年10月
+          <li>&nbsp;&nbsp;&nbsp;Pre-SEUT Fellowship for Graduate Student, Faculty of Engineering, The University of Tokyo，October, 2017.
+            <!--aa-->
           </li>
 
         </ol>
@@ -203,13 +268,38 @@
     </h1>
     </div>
 
+    <div class="blank" id="gallery">
+    </div>
+
+    <div class="contents gallery">
+    <h1 class ="caption">Gallery
+      <div class ="insidegallery">
+        <div class="slider">
+        <img src="GalleryPhoto1.png">
+        <img src="GalleryPhoto2.png">
+        <img src="GalleryPhoto3.png">
+        <img src="GalleryPhoto4.png">
+        </div>
+
+      </div>
+
+
+    </h1>
+    </div>
     <div class="blank2">
     </div>
 
   </div>
 
   <div class="footer">
+    <div class="copyright">
     &copy;&nbsp;2019&nbsp;&nbsp;<a href="#profile">Shunsei&nbsp;TANAKA</a>&nbsp;&nbsp;All Rights Reserved.
+  </div>
+
+    <div class="counter">
+      <!--タグはここから--><table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d443_f6_045/5d57c0943c9b8/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img src="http://www.rays-counter.com/images/counter_04.gif" border="0" ><img src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td></tr></table><!--ここまで-->
+    </div>
+
   </div>
   </body>
 </html>
