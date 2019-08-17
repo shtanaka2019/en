@@ -7,78 +7,36 @@ html{
   scroll-behavior:smooth;
 }
 
-.language{
+.btn.language{
   float:right;
-  text-align: left;
-  height:60px;
   color:gray;
-  position:relative;
-  margin-top:10px;
-  padding:0px 10px;
-  height: 80px;
-  line-height:80px;
-  letter-spacing: 2px;
+  margin-top:2Vw;
+  height: 4Vw;
+  letter-spacing: 0.1Vw;
+  background-color: rgba(255,255,255,0);
 
+}
+
+.language a{
+
+    font-size:1.5Vw;
+    text-indent:0Vw;
+    padding-left:0;
+    padding-top:1Vw;
+    margin-bottom:1Vw;
+    letter-spacing: 0.1Vw;
+    font-weight:bold;
+    vertical-align: top;
+    line-height: 2Vw;
 }
 
 .fas{
-  height: 60px;
   color:gray;
-  line-height:60px;
-  padding-top:40px;
-  font-size:40px;
-
 }
 
-.language__second-level{
-    float:left;
-    position: absolute;
-    top:40px;
-    left:0px;
-    font-size:35px;
-    Visibility:hidden;
-}
-.language:hover .language__second-level {
-    top:45px;
-    visibility: Visible;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    background-color:rgba(255,255,255,0.5);
-    width:100%;
-    height:140px;
-}
 
-.language__second-level li{
-    float:left;
-    list-style:none;
-    text-indent:0px;
-    padding-left:0px;
-    margin-bottom:-20px;
-    letter-spacing: 2px;
-    font-weight:bold;
-
-
-}
-.language:hover .language__second-level li{
-    text-decoration: none;
-    visibility: Visible;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    margin-bottom:-20px;
-    font-weight:bold;
-
-}
-
-.language__second-level li a{
-    text-decoration:none;
-    color:gray;
-    text-align:left;
-}
-
-.language__second-level li a:hover{
+.fas:hover{
     color:#ffb6c1;
-    text-align:left;
-
 }
 
 
@@ -86,41 +44,43 @@ html{
 
 .header{
   background-color: rgba(255,255,255,0.7);
-  border-bottom:10px solid mediumseagreen;
-  height: 100px;
+  border-bottom:0.5Vw solid mediumseagreen;
+  height: 5Vw;
   position:fixed;
-  top:0px;
+  top:0Vw;
   width:97%;
   z-index: 10;
 
 }
 
 .btn{
-  font-size:20px;
-  margin-top:10px;
-  padding:0px 10px;
-  height: 80px;
-  width:240px;
+  font-size:1Vw;
+  margin-top:0.5Vw;
+  padding:0Vw 0.5Vw;
+  height: 4Vw;
+  width:12Vw;
   color:white;
   display:inline-block;
   opacity:0.7;
   background-color:#3cb371;
-  border-radius:10px;
+  border-radius:0.5Vw;
   text-align: center;
-  line-height:80px;
-  letter-spacing: 4px;
+  line-height:4Vw;
+  letter-spacing: 0.2Vw;
   text-decoration: none;
   font-family:sans-serif;
   font-weight:bold;
 }
 
 .btn span{
-  font-size:40px;
+  font-size:2Vw;
 }
 
 .btn:hover{
   opacity:1;
 }
+
+
 
 .contents{
   width:98%;
