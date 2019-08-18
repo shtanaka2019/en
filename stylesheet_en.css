@@ -10,24 +10,24 @@ html{
 .btn.language{
   float:right;
   color:gray;
-  margin-top:2Vw;
+  margin-top:0.5Vw;
   height: 4Vw;
   letter-spacing: 0.1Vw;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,0,0);
+  padding-top:1Vw;
 
 }
 
 .language a{
 
-    font-size:1.5Vw;
-    text-indent:0Vw;
-    padding-left:0;
-    padding-top:1Vw;
-    margin-bottom:1Vw;
-    letter-spacing: 0.1Vw;
-    font-weight:bold;
-    vertical-align: top;
-    line-height: 2Vw;
+  font-size:1.5Vw;
+  text-indent:0Vw;
+  padding-left:0;
+  margin-bottom:1Vw;
+  letter-spacing: 0.1Vw;
+  font-weight:bold;
+  vertical-align:bottom;
+  line-height: 2Vw;
 }
 
 .fas{
@@ -62,7 +62,7 @@ html{
   color:white;
   display:inline-block;
   opacity:0.7;
-  background-color:#3cb371;
+  background-color:rgba(60,179,113,1);
   border-radius:0.5Vw;
   text-align: center;
   line-height:4Vw;
@@ -91,7 +91,7 @@ html{
 }
 
 .caption{
-  font-size:40px;
+  font-size:50px;
   color:dimgray;
   margin-top:0px;
   margin-bottom:20px;
@@ -104,6 +104,10 @@ html{
   font-size:30px;
 }
 
+.bold{
+  font-weight:bold;
+  color:dimgray;
+}
 
 
 .paper{
@@ -127,7 +131,7 @@ html{
   font-size:30px;
   color:gray;
   letter-spacing: 0px;
-  text-indent:-20px;
+  text-indent:-30px;
   padding-left:20px;
   padding-top:10px;
   font-weight:normal;
